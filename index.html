@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 
 
@@ -15,7 +18,12 @@
             box-sizing: border-box;
         }
 
-        .barra-de-top {
+        body {
+            font-family: "lato", Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .barra-de-topo {
             background-color: #FF6b28;
             padding: 15px;
             text-align: center;
@@ -23,22 +31,119 @@
 
         }
 
-        .cabecalho {
+        #cabecalho {
             background-image: url('./images/hero_bolo.jpg');
             height: 400px;
             background-position: center;
             background-size: cover;
 
         }
+
+        .conteudo {
+            margin: auto;
+            max-width: 990px;
+            padding: 0 40px;
+            margin-top: 100px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #FF6b28;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .cartao {
+
+            padding: 70px 100px;
+            margin-top: 50px;
+            border-radius: 20px;
+        }
+
+        .cartao:hover {
+            box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+        }
+
+        .ingradientes {
+            cursor: url('./images/cursor_ingredientes.png'), auto;
+        }
+
+        .ingradientes {
+            cursor: url('./images/cursor_preparo.png'), auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .botao-comprar {
+            background-color: #FF6b28;
+            padding: 16px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        li {
+            margin-bottom: 14px;
+
+        }
+
+        .lista-ingredientes {
+            margin-bottom: 50px;
+        }
     </style>
 
 <body>
-    <div class="barra-de-top">
+    <div class="barra-de-topo">
         <img src="./images/logo_tudogostoso.png" alt="">
     </div>
-    <div class="cabecalho">
+    <div id="cabecalho"></div>
+    <div class="conteudo">
+        <h1>Bolo de Fubá com Goiabada</h1>
+        <div class="cartao ingredientes">
 
+            <h2>Ingredientes</h2>
+            <ul class="lista-ingredientes">
+                <li>1 Ovo</li>
+                <li>1 Copo (americano) de leite</li>
+                <li>1 Copo (americano) de fubá</li>
+                <li>1 Copo (americano) de açucar</li>
+                <li>1/2 Copo (americano) de óleo</li>
+                <li>1 Copo (americano) de farinha de trigo</li>
+                <li>1 colher de fermento em pó</li>
+                <li>goiabada em pedaços </li>
+                <li>erva-doce a gosto</li>
+            </ul>
+            <a href="#" class="botao-comprar">
+                Comprar Ingredientes
+            </a>
+        </div>
+        <div class="cartao preparo">
+            <h2>Modo de preparo</h2>
+            <ol>
+                <li>Misture no liquidificador o ovo, o leite, o óleo, o açúcar, o fubá e bata bem.</li>
 
+                <li>Despeje a mistura em uma tigela, e misture com a farinha e o fermento em pó.</li>
+
+                <li>Despeje a massa em uma forma untada com manteiga e farinha, e acrescente uma camada de goiabada.
+                    Repita este processo
+                    até preencher toda a forma.</li>
+
+                <li> Leve ao forno médio (180° C), preaquecido, por 40 minutos.
+                </li>
+            </ol>
+        </div>
     </div>
     <form>
 
