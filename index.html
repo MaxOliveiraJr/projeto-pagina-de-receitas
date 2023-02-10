@@ -12,7 +12,8 @@
 
 
     <style>
-        * {
+        html,
+        body {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -75,12 +76,21 @@
             box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
         }
 
-        .ingradientes {
+        .ingredientes {
             cursor: url('./images/cursor_ingredientes.png'), auto;
         }
 
-        .ingradientes {
+        .preparo {
             cursor: url('./images/cursor_preparo.png'), auto;
+        }
+
+        .instrucoes {
+            cursor: url('./images/cursor_intrucoes.png'), auto;
+        }
+
+        p,
+        li {
+            line-height: 28px;
         }
 
         a {
@@ -91,7 +101,6 @@
             background-color: #FF6b28;
             padding: 16px;
             border-radius: 20px;
-            color: white;
         }
 
         li {
@@ -101,6 +110,24 @@
 
         .lista-ingredientes {
             margin-bottom: 50px;
+        }
+
+
+        .rodape {
+            background-color: #FF6b28;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .ropape-text {
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .text-white {
+            color: white;
         }
     </style>
 
@@ -125,7 +152,7 @@
                 <li>goiabada em pedaços </li>
                 <li>erva-doce a gosto</li>
             </ul>
-            <a href="#" class="botao-comprar">
+            <a href="#" class="botao-comprar text-white" >
                 Comprar Ingredientes
             </a>
         </div>
@@ -144,12 +171,47 @@
                 </li>
             </ol>
         </div>
-    </div>
-    <form>
+        <div class="cartao instrucoes">
+            <h2>Instruções Adicionais</h2>
+            <p>Bolo de fubá é um daqueles bolos da infância! Isso porque, apesar de ser simples, ele é extremamente
+                saboroso e cai
+                superbem no lanche da tarde, acompanhado de um cafezinho recém-passado. E quando se trata da sua
+                deliciosas receita de
+                bolo, ela não pode deixar de ser um bolo de fubá com goiabada fofinho, não é? No TudoGostoso, te
+                ensinamos alguns
+                truques para deixar seu bolo macio que só ele! Hoje, vamos te mostrar como fazer um bolo de fubá fofinho
+                que vai
+                conquistar todo mundo enquanto ainda está no forno: o aroma que ele deixa na sua cozinha já abre o
+                apetite de bolo! E é
+                tão fácil que você só vai precisar de um liquidificador e da forma. Confira com a gente!</p>
+            <p>Essa receita de bolo de fubá com goiabada é uma delícia, não é mesmo? Quem não gosta de um delicioso bolo
+                de fubá
+                quentinho saindo do forno? Essa receita é uma ótima opção para servir à tarde com uma boa xícara de
+                café! E se você
+                também é fã dessa delícia, venha descobrir 65 receitas de bolo de fubá incríveis! Escolha a sua
+                preferida e delicie-se!</p>
+            <p>O fubá é uma farinha de milho composta por grãos médios; ele absorve mais água do que a farina de milho
+                flocada, por
+                exemplo, pois tem flocos mais finos. Agora que você sabe como fazer bolo de fubá com goiabada, que tal
+                aprender também a
+                fazer angu, cremes, biscoitos, broas e outras delícias. Tem fubá aí na sua despensa e quer algumas
+                ideias? Confira com a
+                gente 30 deliciosas receitas com fubá!</p>
+            <p>Procurando mais receitas de bolos caseiros deliciosos? Confira no TudoGostoso como fazer bolo de milho
+                cremoso, bolo
+                simples, bolo de mandioca, bolo fofo de chocolate, bolo de cenoura e muitas outras receitas fáceis de
+                fazer!</p>
 
-    </form>
+        </div>
+    </div>
+    <div class="rodape">
+        <p class="rodape-texto">
+            Se você encontrou algum problema com esta receita, seja no texto, foto ou autoria, por favor entre em
+            contato através do
+            <a class="text-white" href="mailto:e-mail info@tudogostoso.com.br">info@tudogostoso.com.br </a>
+        </p>
+    </div>
 </body>
 
-<h1></h1>
 
 </html>
